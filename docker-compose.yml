@@ -1,0 +1,12 @@
+version: "2.1"
+
+services:
+  drknow:
+    build: .
+    image: drknow
+    container_name: drknow
+    volumes:
+    - ./logs:/drknow/logs
+    env_file:
+    - .env
+    restart: unless-stopped
