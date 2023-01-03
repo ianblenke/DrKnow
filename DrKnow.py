@@ -144,9 +144,6 @@ class DrKnowClient(discord.Client):
 #    def __init__(self):
 #        self.bot = discord.Client
 
-    def get_twss_emoji(self):
-        return self.get_emoji(885600571636215831)
-
     def censor(self, output):
         # Limit a response to at most 4 lines
         return "\n".join(output.split('\n')[0:4])
